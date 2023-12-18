@@ -169,6 +169,7 @@ function InformasiTerbaruCard() {
       padding: 10,
       margin: 10,
       borderRadius: 9,
+      justifyContent: 'space-between',
     }}>
       <View style={{
         flexShrink: 1,
@@ -182,9 +183,9 @@ function InformasiTerbaruCard() {
           <DownloadIcon />
           <Text style={[styles.inf10, { marginRight: 10, color: '#FC5A5A' }]}>20,23 MB</Text>
         </View>
-        <Text style={[styles.infJudul, { flexWrap: 'wrap', flexShrink: 1 }]}>Ini adalah sebetulnya judul yang sangat panjang sekali</Text>
+        <Text style={[styles.infJudul, { flexWrap: 'wrap', flexShrink: 1 }]}>Lorem ipsum dolor sit amet</Text>
       </View>
-      <Image source={require('../assets/cover_publikasi.png')} />
+      <Image source={require('../assets/cover_publikasi.png')}/>
 
     </View>
   )
@@ -231,10 +232,11 @@ function HomeScreen({navigation}) {
         flex: 1,
         backgroundColor: '#1B85F3',
         borderRadius: 14,
-        paddingLeft: 20,
+        paddingLeft: 15,
         width: '90%',
         alignSelf: 'center',
         flexWrap: 'wrap',
+        
       }}>
 
 
@@ -280,7 +282,7 @@ function HomeScreen({navigation}) {
         borderBottomLeftRadius: 14,
         borderBottomRightRadius: 14,
       }}>
-
+        {/* kotak biru shadow */}
       </View>
 
       <View style={{
@@ -379,9 +381,9 @@ function HomeScreen({navigation}) {
         <Text style={{
           fontFamily: 'DMSansBold',
           fontSize: 20,
-
+          padding: 20,
+          paddingBottom: 5,
         }}>Informasi Terbaru</Text>
-
         <TabView
           navigationState={{ index, routes }}
           renderScene={renderScene}

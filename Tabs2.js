@@ -133,9 +133,6 @@ const LainnyaStack = () => {
 }
 
 function TabBar({ state, descriptors, navigation }) {
-  console.log('state', state)
-  console.log('descriptors', descriptors)
-  console.log('navigation', navigation)
   return (
     <View style={{
       flexDirection: "row",
